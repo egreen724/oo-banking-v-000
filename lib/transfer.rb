@@ -21,6 +21,7 @@ def execute_transaction
   if valid? == true 
     sender.balance = sender.balance - @transfer_amount
     receiver.balance = receiver.balance + @transfer_amount
+    self.status = "complete"
   else 
     NIL
   end
