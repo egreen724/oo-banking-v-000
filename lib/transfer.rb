@@ -18,7 +18,12 @@ def valid?
 end
 
 def execute_transaction
-  
+  if valid? == true 
+    sender.balance = sender.balance - @transfer_amount
+    receiver.balance = receiver.balance + @transfer_amount
+  else 
+    NIL
+  end
 end
 
 def reverse_transaction
