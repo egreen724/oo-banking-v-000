@@ -16,7 +16,8 @@ def display_balance
   return "Your balance is $#{@balance}."
 end
 
-def deposit
+def deposit(amount)
+  self.balance == @balance + amount 
   
 end
 
