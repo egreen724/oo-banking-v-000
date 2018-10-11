@@ -9,6 +9,9 @@ def initialize(name)
   @status = "open"
 end
 
+def balance
+  @balance
+end
 
 
 end
