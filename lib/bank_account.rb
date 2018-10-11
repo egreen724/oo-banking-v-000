@@ -18,7 +18,7 @@ end
 
 def deposit(amount)
   self.balance == @balance + amount 
-  
+  self.balance 
 end
 
 def valid?
